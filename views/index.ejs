@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOD Characters</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/79563c307b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <h1>Keep track of House Of The Dragon Characters</h1>
+    <button type="button"><a href="./form.html">Add or update character</a></button>
+
+
+        <section class="container">
+
+                <% for(let i = 0; i < info.length; i++) {%>
+                    <div>
+                        <ul>
+                            <li class="character">
+                                <span name="characterName">Name: <%= info[i].characterName %></span>
+                            </li>
+                            <li class="house">
+                                <span name="characterHouse">House: <%= info[i].characterHouse %></span>
+                            </li>
+                            <li class="title">
+                                <span name="characterTitle">Title: <%= info[i].characterTitle %></span>
+                            </li>
+                            <li class="desctiption">
+                                <span name="characterDescription">Description: <%= info[i].characterDescription %></span>
+                            </li>
+                            <li class="status">
+                                <span ame="DeadAlive">Status: <%= info[i].DeadAlive %></span>
+                            </li>
+                            <li class="trash">
+                                <span><i class="fa-solid fa-trash"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                <% } %>
+
+                <button style="display: none;" type="button" id="updateButton"></button>
+
+        </section>
+
+        <script src="main.js"></script>
+    </body>
+</html>

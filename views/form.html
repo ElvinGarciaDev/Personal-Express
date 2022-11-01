@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creat/Update Character</title>
+    <link rel="stylesheet" href="/form.css">
+</head>
+<body>
+
+<!-- html and css for form was used from https://www.sanwebe.com/2014/08/css-html-forms-designs -->
+    <div class="form-style-5">
+        <form action="/api" method="POST">
+        <legend><span class="number">1</span> Character Info</legend>
+        <input type="text" name="characterName" placeholder="Character Name *">
+        <input type="text" name="characterHouse" placeholder="Character House *">
+        <input type="text" name="characterTitle" placeholder="Character Title *">
+
+        <textarea name="characterDescription" placeholder="About the character"></textarea>
+        <input type="text" name="DeadAlive" placeholder="Character Dead/Alive *">
+
+  
+        <button type="submit">SUBMIT NEW</button>
+
+        </form>
+        <button type="button" id="updateButton">UPDATE EXISTING</button>
+
+        <script src="main.js"></script>
+
+    </div>
+
+</body>
+</html>
